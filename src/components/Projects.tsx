@@ -93,10 +93,6 @@ const Projects = () => {
                 </div>
 
                 <div className="flex gap-3">
-                  <button className="flex-1 btn-neon text-sm py-2 flex items-center justify-center gap-2">
-                    <ExternalLink className="w-4 h-4" />
-                    Live Preview
-                  </button>
                   <button className="px-4 py-2 glass rounded-lg hover:shadow-neon-violet transition-all duration-300">
                     <a
                     href={project.live}
