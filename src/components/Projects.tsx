@@ -10,6 +10,8 @@ const Projects = () => {
       features: ["Dark/Light Theme Toggle", "Smooth Animations", "Responsive Design", "Glassmorphism Effects"],
       color: "neon-blue",
       gradient: "from-neon-blue/20 to-neon-cyan/20"
+      github: "https://github.com/kousalyaChintha/Portfolio",
+      live: "https://kousalya-portfolio.vercel.app/",
     },
     {
       title: "InfiniteCode",
@@ -18,6 +20,8 @@ const Projects = () => {
       features: ["AI Code Generation", "Smart Auto-complete", "Real-time Collaboration", "Advanced Debugging"],
       color: "neon-violet",
       gradient: "from-neon-violet/20 to-neon-pink/20"
+      github: "https://github.com/kousalyaChintha/InfiniteCode",
+      live: "https://infinite-code-nine.vercel.app/",
     },
     {
       title: "Vegetarian Restaurant Site",
@@ -26,6 +30,8 @@ const Projects = () => {
       features: ["Interactive Menu", "Customer Testimonials", "Special Offers", "Mobile Optimized"],
       color: "neon-cyan",
       gradient: "from-neon-cyan/20 to-neon-blue/20"
+      github: "",
+      live: "",
     }
   ];
 
@@ -92,7 +98,22 @@ const Projects = () => {
                     Live Preview
                   </button>
                   <button className="px-4 py-2 glass rounded-lg hover:shadow-neon-violet transition-all duration-300">
+                    <a
+                    href={project.live}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="flex-1 btn-neon text-sm py-2 text-center"
+                  >
+                    View Project
+                  </a>
+                  <a
+                    href={project.github}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="px-4 py-2 glass rounded-lg hover:shadow-neon-violet transition-all duration-300"
+                  >
                     <Github className="w-4 h-4" />
+                  </a>
                   </button>
                 </div>
               </div>
