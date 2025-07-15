@@ -93,7 +93,8 @@ const Projects = () => {
                 </div>
 
                 <div className="flex gap-3">
-                  <button className="px-4 py-2 glass rounded-lg hover:shadow-neon-violet transition-all duration-300">
+                  <button className="flex-1 btn-neon text-sm py-2 flex items-center justify-center gap-2">
+                    <ExternalLink className="w-4 h-4" />
                     <a
                     href={project.live}
                     target="_blank"
@@ -102,7 +103,10 @@ const Projects = () => {
                   >
                     View Project
                   </a>
-                  <a
+                  </button>
+                  <button className="px-4 py-2 glass rounded-lg hover:shadow-neon-violet transition-all duration-300">
+                    <Github className="w-4 h-4" />
+                    <a
                     href={project.github}
                     target="_blank"
                     rel="noopener noreferrer"
