@@ -48,7 +48,7 @@ const Projects = () => {
       color: "neon-cyan",
       gradient: "from-neon-cyan/20 to-neon-blue/20",
       live: "",
-      github: "",
+      github: "https://github.com/kousalyaChintha/Vegetarian-Restarunt",
     },
   ];
 
